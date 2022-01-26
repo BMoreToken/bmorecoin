@@ -1,7 +1,7 @@
-## Learn About BMoreCoin
+## BMoreCoin BALTx Getting Started
 
 ### Windows Users
-Download and unzip the file https://github.com/BMoreToken/bmorecoin/releases/download/0.0.1/ccx-cli-win64-v0.0.1.zip, start your node bmorecoind.exe and let it sync. While that starts run simplewallet.exe to generate a new wallet getting you an address and the ability to send and receive BALTx.
+Download and unzip the [Windows Release](https://github.com/BMoreToken/bmorecoin/releases/download/0.0.1/ccx-cli-win64-v0.0.1.zip), start your node bmorecoind.exe and let it sync. While that starts run simplewallet.exe to generate a new wallet getting you an address and the ability to send and receive BALTx.
 
 ### Linux Users
 #### Ubuntu 18.04 LTR
