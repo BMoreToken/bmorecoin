@@ -16,6 +16,11 @@
 * sudo apt-get update
 * sudo apt-get install -y libboost1.67-all-dev
 
+#### CentOS 8
+* sudo yum update
+* sudo yum -y install boost-devel
+
+
 ## Automated Tests
 * [![Stable Nightly Build](https://github.com/BMoreToken/bmorecoin/actions/workflows/nightly.yml/badge.svg)](https://github.com/BMoreToken/bmorecoin/actions/workflows/nightly.yml)
 * [![Unstable Nightly Build](https://github.com/BMoreToken/bmorecoin/actions/workflows/nightly_unstable.yml/badge.svg)](https://github.com/BMoreToken/bmorecoin/actions/workflows/nightly_unstable.yml)
