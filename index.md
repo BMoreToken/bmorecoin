@@ -12,7 +12,7 @@
 * Address: [[0xbdd4f273c2b0f0b84a51bd733aac617d91159376](https://etherscan.io/address/0xbdd4f273c2b0f0b84a51bd733aac617d91159376)]
 
 ## CLI Getting Started
-
+* GUI use https://bmoretoken.github.io/bmorecoinwallet/
 ### Windows Users
 * [![Windows](https://github.com/BMoreToken/bmorecoin/actions/workflows/windows.yml/badge.svg)](https://github.com/BMoreToken/bmorecoin/actions/workflows/windows.yml)
 * Download and unzip the [Windows Release](https://github.com/BMoreToken/bmorecoin/releases/download/0.0.1/ccx-cli-win64-v0.0.1.zip), start your node bmorecoind.exe and let it sync. 
