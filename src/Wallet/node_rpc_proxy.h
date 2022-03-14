@@ -1,21 +1,21 @@
-// Copyright (c) 2014-2019, AEON, The Monero Project
-//
+// Copyright (c) 2017-2019, AEON, The Monero Project
+// 
 // All rights reserved.
-//
+// 
 // Redistribution and use in source and binary forms, with or without modification, are
 // permitted provided that the following conditions are met:
-//
+// 
 // 1. Redistributions of source code must retain the above copyright notice, this list of
 //    conditions and the following disclaimer.
-//
+// 
 // 2. Redistributions in binary form must reproduce the above copyright notice, this list
 //    of conditions and the following disclaimer in the documentation and/or other
 //    materials provided with the distribution.
-//
+// 
 // 3. Neither the name of the copyright holder nor the names of its contributors may be
 //    used to endorse or promote products derived from this software without specific
 //    prior written permission.
-//
+// 
 // THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
 // EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
 // MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
@@ -25,46 +25,46 @@
 // INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
 // STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 // THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-//
-// Parts of this file are originally copyright (c) 2012-2013 The Cryptonote developers
 
-#include "wallet/api/wallet2_api.h"
-#include "wallet/wallet2.h"
+#pragma once
 
-namespace Monero {
+#include <string>
+#include <boost/thread/mutex.hpp>
+#include "include_base_utils.h"
+#include "net/http_client.h"
 
-class WalletImpl;
+namespace tools
+{
 
-class AddressBookImpl : public AddressBook
+class NodeRPCProxy
 {
 public:
-    AddressBookImpl(WalletImpl * wallet);
-    ~AddressBookImpl();
-    
-    // Fetches addresses from Wallet2
-    void refresh() override;
-    std::vector<AddressBookRow*> getAll() const override;
-    bool addRow(const std::string &dst_addr , const std::string &payment_id, const std::string &description) override;
-    bool deleteRow(std::size_t rowId) override;
-     
-    // Error codes. See AddressBook:ErrorCode enum in wallet2_api.h
-    std::string errorString() const override {return m_errorString;}
-    int errorCode() const override {return m_errorCode;}
+  NodeRPCProxy(epee::net_utils::http::http_simple_client &http_client, boost::mutex &mutex);
 
-    int lookupPaymentID(const std::string &payment_id) const override;
-    
+  void invalidate();
+
+  boost::optional<std::string> get_rpc_version(uint32_t &version) const;
+  boost::optional<std::string> get_height(uint64_t &height) const;
+  void set_height(uint64_t h);
+  boost::optional<std::string> get_target_height(uint64_t &height) const;
+  boost::optional<std::string> get_block_weight_limit(uint64_t &block_weight_limit) const;
+  boost::optional<std::string> get_adjusted_time(uint64_t &adjusted_time) const;
+  boost::optional<std::string> get_earliest_height(uint8_t version, uint64_t &earliest_height) const;
+
 private:
-    void clearRows();
-    void clearStatus();
-    
-private:
-    WalletImpl *m_wallet;
-    std::vector<AddressBookRow*> m_rows;
-    std::string m_errorString;
-    int m_errorCode;
+  boost::optional<std::string> get_info() const;
+
+  epee::net_utils::http::http_simple_client &m_http_client;
+  boost::mutex &m_daemon_rpc_mutex;
+
+  mutable uint64_t m_height;
+  mutable uint64_t m_earliest_height[256];
+  mutable uint64_t m_adjusted_time;
+  mutable uint32_t m_rpc_version;
+  mutable uint64_t m_target_height;
+  mutable uint64_t m_block_weight_limit;
+  mutable time_t m_get_info_time;
+  mutable time_t m_height_time;
 };
 
 }
-
-namespace Bitmonero = Monero;
-
