@@ -39,7 +39,7 @@
 #endif
 
 #include "misc_log_ex.h"
-#include "util.h"
+#include "Util.h"
 #include "spawn.h"
 
 #undef MONERO_DEFAULT_LOG_CATEGORY
