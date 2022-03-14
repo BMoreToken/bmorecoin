@@ -43,10 +43,10 @@
 
 #include "hex.h"
 #include "span.h"
-#include "serialization/vector.h"
-#include "serialization/debug_archive.h"
-#include "serialization/binary_archive.h"
-#include "serialization/json_archive.h"
+#include "Serialization/vector.h"
+#include "Serialization/debug_archive.h"
+#include "Serialization/binary_archive.h"
+#include "Serialization/json_archive.h"
 
 
 //Define this flag when debugging to get additional info on the console
