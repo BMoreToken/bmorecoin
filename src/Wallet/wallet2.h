@@ -58,7 +58,7 @@
 #include "ringct/rctOps.h"
 #include "checkpoints/checkpoints.h"
 
-#include "wallet_errors.h"
+#include "WalletErrors.h"
 #include "Common/password.h"
 #include "node_rpc_proxy.h"
 
