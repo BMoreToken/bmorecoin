@@ -60,7 +60,7 @@
 
 #include "WalletErrors.h"
 #include "Common/password.h"
-#include "node_rpc_proxy.h"
+#include "NodeRpcProxy/NodeRpcProxy.h"
 
 #undef MONERO_DEFAULT_LOG_CATEGORY
 #define MONERO_DEFAULT_LOG_CATEGORY "wallet.wallet2"
