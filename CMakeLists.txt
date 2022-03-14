@@ -159,9 +159,6 @@ ExternalProject_Add(generate_translations_header
   CMAKE_ARGS -DLRELEASE_PATH=${LRELEASE_PATH}
   INSTALL_COMMAND cmake -E echo "")
 include_directories("${CMAKE_CURRENT_BINARY_DIR}/translations")
-add_subdirectory(external)
-
-
 
 add_subdirectory(external)
 add_subdirectory(src)
