@@ -43,7 +43,7 @@
 #include "Serialization/debug_archive.h"
 #include "Serialization/crypto.h"
 #include "Serialization/keyvalue_serialization.h" // eepe named serialization
-#include "cryptonote_config.h"
+#include "CryptoNoteConfig.h"
 #include "crypto/crypto.h"
 #include "crypto/hash.h"
 #include "misc_language.h"
