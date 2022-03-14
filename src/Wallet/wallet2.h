@@ -48,7 +48,7 @@
 #include "CryptoNoteCore/CryptoNoteBasicImpl.h"
 #include "net/http_client.h"
 #include "Storages/http_abstract_invoke.h"
-#include "rpc/core_rpc_server_commands_defs.h"
+#include "Rpc/CoreRpcServerCommandsDefinitions.h"
 #include "CryptoNoteCore/CryptoNoteFormatUtils.h"
 #include "CryptoNoteCore/cryptonote_tx_utils.h"
 #include "Common/unordered_containers_boost_serialization.h"
