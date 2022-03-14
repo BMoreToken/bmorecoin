@@ -33,7 +33,7 @@
 #include <boost/asio/io_service.hpp>
 #include <typeinfo>
 #include <type_traits>
-#include "serialization/keyvalue_serialization.h"
+#include "Serialization/keyvalue_serialization.h"
 #include "misc_log_ex.h"
 
 #undef MONERO_DEFAULT_LOG_CATEGORY
