@@ -40,8 +40,8 @@
 #include <boost/archive/portable_binary_iarchive.hpp>
 #include <boost/archive/portable_binary_oarchive.hpp>
 #include "CryptoNoteBasic.h"
-#include "difficulty.h"
-#include "common/unordered_containers_boost_serialization.h"
+#include "Difficulty.h"
+#include "Common/unordered_containers_boost_serialization.h"
 #include "crypto/crypto.h"
 #include "ringct/rctTypes.h"
 #include "ringct/rctOps.h"
