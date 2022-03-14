@@ -40,14 +40,14 @@
 #include <boost/optional/optional.hpp>
 #include <boost/program_options/variables_map.hpp>
 
-#include "cryptonote_basic/account.h"
-#include "cryptonote_basic/cryptonote_basic_impl.h"
+#include "CryptoNoteCore/Account.h"
+#include "CryptoNoteCore/CryptoNoteBasicImpl.h"
 #include "wallet/wallet2.h"
 #include "console_handler.h"
 #include "math_helper.h"
 #include "wipeable_string.h"
-#include "common/i18n.h"
-#include "common/password.h"
+#include "Common/i18n.h"
+#include "Common/password.h"
 #include "crypto/crypto.h"  // for definition of crypto::secret_key
 
 #undef MONERO_DEFAULT_LOG_CATEGORY
