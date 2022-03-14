@@ -33,7 +33,7 @@
 #include <boost/algorithm/string/predicate.hpp>
 #include <unordered_set>
 #include "Common/i18n.h"
-#include "cryptonote_config.h"
+#include "CryptoNoteConfig.h"
 #include "string_tools.h"
 
 namespace command_line
