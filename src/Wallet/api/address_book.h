@@ -28,8 +28,8 @@
 //
 // Parts of this file are originally copyright (c) 2012-2013 The Cryptonote developers
 
-#include "wallet/api/wallet2_api.h"
-#include "wallet/wallet2.h"
+#include "Wallet/api/wallet2_api.h"
+#include "Wallet/wallet2.h"
 
 namespace Monero {
 
