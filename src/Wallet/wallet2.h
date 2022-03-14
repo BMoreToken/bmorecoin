@@ -47,11 +47,11 @@
 #include "CryptoNoteCore/account_boost_serialization.h"
 #include "CryptoNoteCore/CryptoNoteBasicImpl.h"
 #include "net/http_client.h"
-#include "storages/http_abstract_invoke.h"
+#include "Storages/http_abstract_invoke.h"
 #include "rpc/core_rpc_server_commands_defs.h"
 #include "CryptoNoteCore/CryptoNoteFormatUtils.h"
 #include "CryptoNoteCore/cryptonote_tx_utils.h"
-#include "common/unordered_containers_boost_serialization.h"
+#include "Common/unordered_containers_boost_serialization.h"
 #include "crypto/chacha.h"
 #include "crypto/hash.h"
 #include "ringct/rctTypes.h"
@@ -59,7 +59,7 @@
 #include "checkpoints/checkpoints.h"
 
 #include "wallet_errors.h"
-#include "common/password.h"
+#include "Common/password.h"
 #include "node_rpc_proxy.h"
 
 #undef MONERO_DEFAULT_LOG_CATEGORY
