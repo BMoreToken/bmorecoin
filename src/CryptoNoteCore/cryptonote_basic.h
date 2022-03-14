@@ -36,13 +36,13 @@
 #include <cstring>  // memcmp
 #include <sstream>
 #include <atomic>
-#include "serialization/variant.h"
-#include "serialization/vector.h"
-#include "serialization/binary_archive.h"
-#include "serialization/json_archive.h"
-#include "serialization/debug_archive.h"
-#include "serialization/crypto.h"
-#include "serialization/keyvalue_serialization.h" // eepe named serialization
+#include "Serialization/variant.h"
+#include "Serialization/vector.h"
+#include "Serialization/binary_archive.h"
+#include "Serialization/json_archive.h"
+#include "Serialization/debug_archive.h"
+#include "Serialization/crypto.h"
+#include "Serialization/keyvalue_serialization.h" // eepe named serialization
 #include "cryptonote_config.h"
 #include "crypto/crypto.h"
 #include "crypto/hash.h"
