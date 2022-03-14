@@ -58,7 +58,7 @@
 #include "simplewallet.h"
 #include "CryptoNoteCore/CryptoNoteFormatUtils.h"
 #include "Storages/http_abstract_invoke.h"
-#include "Rpc/core_rpc_server_commands_defs.h"
+#include "Rpc/CoreRpcServerCommandsDefinitions.h"
 #include "crypto/crypto.h"  // for crypto::secret_key definition
 #include "mnemonics/electrum-words.h"
 #include "rapidjson/document.h"
