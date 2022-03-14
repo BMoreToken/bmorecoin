@@ -52,7 +52,7 @@
 #include "Common/command_line.h"
 #include "Common/Util.h"
 #include "Common/dns_utils.h"
-#include "Common/base58.h"
+#include "Common/Base58.h"
 #include "Common/scoped_message_writer.h"
 #include "cryptonote_protocol/cryptonote_protocol_handler.h"
 #include "simplewallet.h"
