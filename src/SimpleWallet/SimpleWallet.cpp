@@ -54,9 +54,9 @@
 #include "Common/dns_utils.h"
 #include "Common/Base58.h"
 #include "Common/scoped_message_writer.h"
-#include "cryptonote_protocol/cryptonote_protocol_handler.h"
+#include "CryptoNoteProtocol/CryptoNoteProtocolHandler.h"
 #include "simplewallet.h"
-#include "cryptonote_basic/cryptonote_format_utils.h"
+#include "CryptoNoteCore/CryptoNoteFormatUtils.h"
 #include "storages/http_abstract_invoke.h"
 #include "rpc/core_rpc_server_commands_defs.h"
 #include "crypto/crypto.h"  // for crypto::secret_key definition
