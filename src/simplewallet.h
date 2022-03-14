@@ -42,7 +42,7 @@
 
 #include "CryptoNoteCore/Account.h"
 #include "CryptoNoteCore/CryptoNoteBasicImpl.h"
-#include "wallet/wallet2.h"
+#include "Wallet/wallet2.h"
 #include "console_handler.h"
 #include "math_helper.h"
 #include "wipeable_string.h"
