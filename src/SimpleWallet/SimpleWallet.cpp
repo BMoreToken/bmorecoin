@@ -50,7 +50,7 @@
 #include "include_base_utils.h"
 #include "Common/i18n.h"
 #include "Common/command_line.h"
-#include "Common/util.h"
+#include "Common/Util.h"
 #include "Common/dns_utils.h"
 #include "Common/base58.h"
 #include "Common/scoped_message_writer.h"
