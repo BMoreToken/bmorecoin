@@ -33,8 +33,8 @@
 #include <vector>
 #include "misc_log_ex.h"
 #include "crypto/hash.h"
-#include "cryptonote_config.h"
-#include "cryptonote_basic/difficulty.h"
+#include "CryptoNoteConfig.h"
+#include "CryptoNoteCore/Difficulty.h"
 
 #define ADD_CHECKPOINT(h, hash)  CHECK_AND_ASSERT(add_checkpoint(h,  hash), false);
 #define ADD_CHECKPOINT2(h, hash, difficulty)  CHECK_AND_ASSERT(add_checkpoint(h,  hash, difficulty), false);
