@@ -27,9 +27,9 @@
 // THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "node_rpc_proxy.h"
-#include "rpc/core_rpc_server_commands_defs.h"
-#include "common/json_util.h"
-#include "storages/http_abstract_invoke.h"
+#include "Rpc/CoreRpcServerCommandsDefinitions.h"
+#include "Common/json_util.h"
+#include "Storages/http_abstract_invoke.h"
 
 using namespace epee;
 
