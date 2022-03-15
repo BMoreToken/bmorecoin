@@ -39,7 +39,7 @@
 #include "hex.h"
 #include "span.h"
 
-namespace crypto {
+namespace Crypto {
 
   extern "C" {
 #include "hash-ops.h"
