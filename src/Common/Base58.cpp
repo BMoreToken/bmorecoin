@@ -37,7 +37,7 @@
 #include "crypto/hash.h"
 #include "int-util.h"
 #include "Util.h"
-#include "varint.h"
+#include "Varint.h"
 
 namespace tools
 {
