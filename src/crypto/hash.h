@@ -34,12 +34,12 @@
 #include <iostream>
 #include <boost/utility/value_init.hpp>
 
-#include "Common/pod-class.h"
+#include "common/pod-class.h"
 #include "generic-ops.h"
 #include "hex.h"
 #include "span.h"
 
-namespace Crypto {
+namespace crypto {
 
   extern "C" {
 #include "hash-ops.h"
