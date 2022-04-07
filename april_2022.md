@@ -1,4 +1,4 @@
-# April, 2022
+# Newsletter for April 2022
 
 The past few weeks have seen our fastest growth, both users and miners.
 
